@@ -13,7 +13,8 @@ class AnimalDB(BaseDB):
     def __init__(self):
         super().__init__(path=PATH_DB, create=True)
         if not self._existed:
-            self._create_tables()
+            pass
+            #self._create_tables()
         return
     
     def get_category_list(self) -> list:
